@@ -47,7 +47,11 @@ export const config = {
   // Sauce Labs platform configurator - a great tool to configure your capabilities:
   // https://saucelabs.com/platform/platform-configurator
   //
-  capabilities: [{ browserName: 'chrome' }, { browserName: 'firefox' }],
+  capabilities: [
+    { browserName: 'chrome' },
+    { browserName: 'firefox' },
+    { browserName: 'microsoftedge' },
+  ],
   //
   // ===================
   // Test Configurations
@@ -55,7 +59,7 @@ export const config = {
   // Define all options that are relevant for the WebdriverIO instance here
   //
   // Level of logging verbosity: trace | debug | info | warn | error | silent
-  logLevel: 'info',
+  logLevel: 'error',
   //
   // Set specific log levels per logger
   // loggers:

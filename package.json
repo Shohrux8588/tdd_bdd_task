@@ -3,8 +3,6 @@
   "type": "module",
   "scripts": {
     "wdio:tdd": "wdio run ./src/configs/wdio.conf.js",
-    "wdio:tdd:chrome": "wdio run ./src/configs/wdio.conf.js --capabilities browserName=chrome",
-    "wdio:tdd:firefox": "wdio run ./src/configs/wdio.conf.js --capabilities browserName=firefox",
     "wdio:bdd": "wdio run ./src/configs/wdio.bdd.conf.js"
   },
   "devDependencies": {

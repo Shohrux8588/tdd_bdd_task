@@ -52,8 +52,6 @@ npm install
 | Script                          | Description                                   |
 |---------------------------------|-----------------------------------------------|
 | `npm run test:wdio:tdd`         | Run TDD tests.                               |
-| `npm run test:wdio:tdd:chrome`  | Run TDD tests specifically on Chrome.        |
-| `npm run test:wdio:tdd:firefox` | Run TDD tests specifically on Firefox.       |
 | `npm run test:wdio:bdd`         | Run BDD tests.                               |
 
 
@@ -66,7 +64,7 @@ npm install
 - **`wdio.bdd.conf.js`**: Configuration file for BDD tests.
 
 ### Browser-Specific Capabilities
-The default configuration includes support for Chrome and Firefox. Additional capabilities can be added or modified in the respective `.conf.js` files.
+The default configuration includes support for Chrome, Firefox and Microsoft Edge. Additional capabilities can be added or modified in the respective `.conf.js` files.
 
 ---
 
@@ -79,15 +77,6 @@ Run tests using the scripts defined in the `package.json` file:
   npm run test:wdio:tdd
   ```
 
-- **TDD Tests on Chrome**:
-  ```bash
-  npm run test:wdio:tdd:chrome
-  ```
-
-- **TDD Tests on Firefox**:
-  ```bash
-  npm run test:wdio:tdd:firefox
-  ```
 
 - **BDD Tests**:
   ```bash
