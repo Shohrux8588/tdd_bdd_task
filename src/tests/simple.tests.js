@@ -19,7 +19,7 @@ describe('Login page', () => {
     await pageMap('login').form.clearInput();
 
     // Step 4: Click the login button
-    await pageMap('login').form.loginBtn.click();
+    await pageMap('login').form.loginButton.click();
 
     // Step 5: Wait for the error message to appear and verify it
     await pageMap('login').form.errorMessageField.waitForDisplayed({ timeout: 5000 });
@@ -41,7 +41,7 @@ describe('Login page', () => {
     await pageMap('login').form.clearInput();
 
     // Step 4: Click the login button
-    await pageMap('login').form.loginBtn.click();
+    await pageMap('login').form.loginButton.click();
 
     // Step 5: Assert the error message contains 'Password is required'
     const errorText = await pageMap('login').form.errorMessageField.getText();
@@ -56,7 +56,7 @@ describe('Login page', () => {
     await pageMap('login').form.input('password').setValue('secret_sauce');
 
     // Step 3: Click the login button
-    await pageMap('login').form.loginBtn.click();
+    await pageMap('login').form.loginButton.click();
 
     // Step 4: Assert that the app logo is displayed after successful login
     const appLogoElement = await pageMap('products').productsHeader.productsHeaderLogo; // Adjusting selector for the app logo

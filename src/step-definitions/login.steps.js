@@ -25,7 +25,7 @@ When('I clear the password field', async () => {
 
 When('I click the login button', async () => {
   const loginPage = pageMap('login');
-  await loginPage.form.loginBtn.click();
+  await loginPage.form.loginButton.click();
 });
 
 Then('I should see the error message {string}', async (expectedMessage) => {

@@ -9,7 +9,7 @@ class Form extends BaseComponent {
     return this.rootEl.$('[data-test="error"]');
   }
 
-  get loginBtn() {
+  get loginButton() {
     return this.rootEl.$('#login-button');
   }
   /**
